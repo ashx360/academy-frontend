@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+
+
+:root {
+  
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .helvetica {
+    font-family: "Helvetica, Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .font-helvetica-glow {
+    text-shadow: 0 0 20px white;
+  }
+
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+@font-face {
+  font-family: "Helvetica Black, Helvetica Neue";
+  src: url("/fonts/Helvetica-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+  .animate-loading {
+    animation: loading 3s linear forwards;
+  }

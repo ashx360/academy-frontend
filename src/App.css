@@ -1,0 +1,15 @@
+
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@layer utilities {
+  .font-helvetica-glow {
+    text-shadow: 0 0 8px white, 0 0 16px white;
+  }
+}
