@@ -8,8 +8,4 @@
   text-align: center;
 }
 
-@layer utilities {
-  .font-helvetica-glow {
-    text-shadow: 0 0 8px white, 0 0 16px white;
-  }
-}
+
